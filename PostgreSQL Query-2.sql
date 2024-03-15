@@ -245,7 +245,6 @@ ORDER BY unit_price DESC;
 SELECT product_name,unit_price,units_in_stock FROM products 
 ORDER BY unit_price DESC, units_in_stock ASC;
 
------		--------
 
 --84. 1 Numaralı kategoride kaç ürün vardır..?
 SELECT COUNT(*) AS"category_id_1" FROM categories WHERE category_id = 1
@@ -285,9 +284,6 @@ JOIN products p ON od.product_id = p.product_id;
 SELECT AVG(p.unit_price) AS "total_price"
 FROM order_details od
 JOIN products p ON od.product_id = p.product_id;
------
-SELECT AVG(unit_price) AS "total_price"
-FROM products;
 
 
 --92. En Pahalı Ürünün Adı
